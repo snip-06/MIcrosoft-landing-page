@@ -1,0 +1,480 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 54px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 70px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    background-position: center;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.border {
+    border-bottom: 2.5px solid transparent;
+}
+
+.border:hover {
+    border-bottom: 2.5px solid black;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item-individual {
+    margin-left: 15px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.drop {
+    border: none;
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon.title {
+    color: blue;
+}
+
+/* Hero Section 1 */
+.hero-section1 {
+    background-image: url("background.avif");
+    min-height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.surface-info {
+    background-color: #fff;
+    max-width: 35%;
+    margin-left: 60px;
+    margin-top: 0px;
+    padding: 40px;
+    display: inline-block;
+    max-height: fit-content;
+}
+
+.surface-info-heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.surface-info-text {
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.surface-info-button {
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: #0067b8;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.surface-info-button:hover {
+    background-color: #025697;
+    cursor: pointer;
+}
+
+/* Hero Section 2 */
+.hero-section2 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-pause {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 4px 5px 4px 6px;
+    font-size: 12px;
+    
+}
+
+.play-pause:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.dot1, .dot2 {
+    height: 8px;
+    width: 8px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.arrow1 {
+    margin-top: 20px;
+}
+
+.arrow2 {
+    margin-bottom: 20px;
+}
+
+/* Choose logo option */
+.hero-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    clear: both;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+
+.option i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.option a {
+    margin-top: 0;
+    color: #0067b8;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Body Boxes */
+.body-boxes {
+    display: flex;
+    min-height: 450px;
+    margin-top: 40px;
+    padding: 20px;
+    gap: 25px;
+    justify-content: center;
+    clear: both;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.body-boxes:hover {
+    cursor: pointer;
+}
+
+.body-box1, .body-box2, .body-box3, .body-box4 {
+    flex: 1 1 22%;
+    max-width: 300px;
+    min-width: 250px;
+    min-height: 350px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-set {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 100%;
+}
+
+.body-box-image1 { background-image: url("body-box1.avif"); }
+.body-box-image2 { background-image: url("body-box2.avif"); }
+.body-box-image3 { background-image: url("body-box3.avif"); }
+.body-box-image4 { background-image: url("body-box4.avif"); }
+
+.body-box-heading {
+    font-size: 25px;
+    padding: 20px 20px 0 20px;
+    font-weight: 550;
+}
+
+.body-box-text {
+    font-size: 18px;
+    padding: 20px;
+    padding-bottom: 70px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.body-box-button {
+    border: none;
+    background-color: #0067b8;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 80%;
+    font-weight: 500;
+}
+
+.body-box-button:hover {
+    background-color: #025697;
+    cursor: pointer;
+}
+
+/* Game Pass */
+.game-pass-box {
+    display: flex;
+    width: 100%;
+    min-height: 35rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-pass {
+    background-image: url("game pass.avif");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.game-pass-info {
+    color: white;
+    max-width: 25%;
+    margin-left: 60px;
+    margin-top: 70px;
+    padding: 40px;
+    display: inline-block;
+    max-height: fit-content;
+    background: rgba(0,0,0,0.3); /* Optional: add contrast */
+}
+
+.game-pass-heading {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.game-pass-text {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.game-pass-button {
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: #0067b8;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.game-pass-button:hover {
+    background-color: #025697;
+    cursor: pointer;
+}
+
+.game-pass-video-icon {
+    font-size: 20px;
+    padding: 25px 10px 25px 25px;
+}
+
+.game-pass-video {
+    color: white;
+    background-color: #1a1a1a;
+    border: none;
+    font-size: 18px;
+}
+
+.game-pass-video:hover {
+    cursor: pointer;
+}
+
+/* Business Boxes */
+.business-boxes {
+    display: flex;
+    min-height: 500px;
+    margin-top: 40px;
+    padding: 20px;
+    gap: 25px;
+    justify-content: center;
+    clear: both;
+    flex-wrap: wrap;
+}
+
+.business-boxes-text {
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+.business-box-image1 { background-image: url("business-box1.avif"); }
+.business-box-image2 { background-image: url("business-box2.avif"); }
+.business-box-image3 { background-image: url("business-box3.avif"); }
+.business-box-image4 { background-image: url("business-box4.avif"); }
+
+
+@media (max-width: 600px) {
+  /* HERO SECTION 1: Stack vertically, info below image */
+  .hero-section1 {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 220px;
+    height: auto;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+  }
+  .surface-info {
+    order: 2;
+    margin: 0;
+    padding: 16px;
+    max-width: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.96); /* For readability */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  /* GAME PASS SECTION: Stack vertically, info below image */
+  .game-pass-box {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 220px;
+    height: auto;
+  }
+  .game-pass {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    min-height: 200px;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+  }
+  .game-pass-info {
+    order: 2;
+    margin: 0;
+    padding: 16px;
+    max-width: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7); /* For readability */
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  /* Other mobile styles (keep as you have) */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+  }
+  .nav-items,
+  .nav-item-individual {
+    display: none;
+  }
+  .logo {
+    width: 90px;
+    height: 34px;
+    margin-right: 0;
+  }
+  .left {
+    margin: 0;
+    align-items: center;
+  }
+  .right,
+  .signin-section {
+    display: flex !important;
+    align-items: center;
+  }
+  .body-boxes, .business-boxes {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+  }
+  .body-box1, .body-box2, .body-box3, .body-box4,
+  .business-box1, .business-box2, .business-box3, .business-box4 {
+     margin: 0;
+     width: 100%;
+  }
+  .hero-options {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+  }
+  .surface-info-heading, .game-pass-heading, .business-boxes-text {
+      font-size: 22px;
+  }
+  .body-box-heading {
+      font-size: 18px;
+  }
+  .body-box-text {
+      font-size: 15px;
+  }
+  .body-box-button, .game-pass-button {
+      font-size: 15px;
+      min-width: 90%;
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+}
